@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BauteilePDFTeiler"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="158" Width="800">
+    <Grid Margin="0,0,0,-1">
+        <Label HorizontalAlignment="Left" Content="Datei hier ablegen" BorderThickness="1" BorderBrush="Black" AllowDrop="True" Height="30" Margin="30,30,0,0" VerticalAlignment="Top" Width="624" Drop="dateiAnzeige_Drop" Name="dateiAnzeige"/>
+        <Button Content="Datei auswählen" Name="dateiButton" HorizontalAlignment="Left" Height="30" Margin="659,30,0,0" VerticalAlignment="Top" Width="103" Click="dateiButton_Click"/>
+        <Button x:Name="ausführenButton" Content="Ausführen" HorizontalAlignment="Left" Height="30" Margin="30,78,0,0" VerticalAlignment="Top" Width="732" IsCancel="True" Click="ausführenButton_Click"/>
     </Grid>
 </Window>
